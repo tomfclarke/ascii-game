@@ -1,0 +1,240 @@
+# depslib dependency file v1.0
+1369048212 source:c:\users\clarke\documents\codeblocks\oomapgame\main.cpp
+	<iostream>
+	"windows.h"
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/world.h"
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/intromenu.h"
+	"resources.h"
+
+1369048178 c:\users\clarke\documents\codeblocks\oomapgame\include\world.h
+	<iostream>
+	<vector>
+	<sstream>
+	"stdio.h"
+	"windows.h"
+	"time.h"
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/resources.h"
+	"player.h"
+	"bullet.h"
+	"enemy.h"
+	"scoring.h"
+	"soundmanager.h"
+
+1369048185 c:\users\clarke\documents\codeblocks\oomapgame\include\player.h
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/resources.h"
+
+1369048237 source:c:\users\clarke\documents\codeblocks\oomapgame\src\player.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/player.h"
+
+1369048249 source:c:\users\clarke\documents\codeblocks\oomapgame\src\world.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/world.h"
+
+1368471846 c:\users\clarke\documents\codeblocks\oomapgame\\resources.h
+	"windows.h"
+	"stdlib.h"
+	"time.h"
+
+1368471846 c:\users\clarke\documents\codeblocks\oomapgame\resources.h
+	"windows.h"
+	"stdlib.h"
+	"time.h"
+
+1368471846 source:c:\users\clarke\documents\codeblocks\oomapgame\resources.cpp
+	"resources.h"
+
+1369048225 source:c:\users\clarke\documents\codeblocks\oomapgame\src\bullet.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/bullet.h"
+
+1369048191 c:\users\clarke\documents\codeblocks\oomapgame\include\bullet.h
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/resources.h"
+
+1369048197 c:\users\clarke\documents\codeblocks\oomapgame\include\enemy.h
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/resources.h"
+
+1369048229 source:c:\users\clarke\documents\codeblocks\oomapgame\src\enemy.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/enemy.h"
+
+1369048254 source:c:\users\clarke\documents\codeblocks\oomapgame\world_bullet.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/world.h"
+
+1369048258 source:c:\users\clarke\documents\codeblocks\oomapgame\world_enemy.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/world.h"
+
+1369048241 source:c:\users\clarke\documents\codeblocks\oomapgame\src\scoring.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/scoring.h"
+
+1369048203 c:\users\clarke\documents\codeblocks\oomapgame\include\scoring.h
+	<iostream>
+	<fstream>
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/resources.h"
+
+1369399880 source:c:\users\clarke\documents\codeblocks\oomapgame\src\soundmanager.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/soundmanager.h"
+
+1369043146 c:\users\clarke\documents\codeblocks\oomapgame\include\soundmanager.h
+	<iostream>
+	<SFML/Audio.hpp>
+
+1368730202 c:\sfml-2.0\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1368730202 c:\sfml-2.0\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1368730202 c:\sfml-2.0\include\sfml\config.hpp
+
+1368730203 c:\sfml-2.0\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1368730203 c:\sfml-2.0\include\sfml\system\export.hpp
+	<SFML/Config.hpp>
+
+1368730203 c:\sfml-2.0\include\sfml\system\time.hpp
+	<SFML/System/Export.hpp>
+
+1368730203 c:\sfml-2.0\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+
+1368730203 c:\sfml-2.0\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+
+1368730203 c:\sfml-2.0\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1368730203 c:\sfml-2.0\include\sfml\system\noncopyable.hpp
+	<SFML/System/Export.hpp>
+
+1368730203 c:\sfml-2.0\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1368730203 c:\sfml-2.0\include\sfml\system\sleep.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1368730203 c:\sfml-2.0\include\sfml\system\string.hpp
+	<SFML/System/Export.hpp>
+	<locale>
+	<string>
+
+1368730203 c:\sfml-2.0\include\sfml\system\thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+
+1368730203 c:\sfml-2.0\include\sfml\system\thread.inl
+
+1368730203 c:\sfml-2.0\include\sfml\system\threadlocal.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+
+1368730203 c:\sfml-2.0\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+
+1368730203 c:\sfml-2.0\include\sfml\system\threadlocalptr.inl
+
+1368730203 c:\sfml-2.0\include\sfml\system\utf.hpp
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+
+1368730203 c:\sfml-2.0\include\sfml\system\utf.inl
+
+1368730203 c:\sfml-2.0\include\sfml\system\vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1368730203 c:\sfml-2.0\include\sfml\system\vector2.inl
+
+1368730203 c:\sfml-2.0\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1368730203 c:\sfml-2.0\include\sfml\system\vector3.inl
+
+1368730202 c:\sfml-2.0\include\sfml\audio\listener.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+
+1368730202 c:\sfml-2.0\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+
+1368730202 c:\sfml-2.0\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+
+1368730202 c:\sfml-2.0\include\sfml\audio\soundstream.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+
+1368730202 c:\sfml-2.0\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+
+1368730202 c:\sfml-2.0\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+
+1368730202 c:\sfml-2.0\include\sfml\audio\soundbuffer.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+
+1368730202 c:\sfml-2.0\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1368730202 c:\sfml-2.0\include\sfml\audio\soundrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Thread.hpp>
+	<vector>
+
+1369048233 source:c:\users\clarke\documents\codeblocks\oomapgame\src\intromenu.cpp
+	"C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/intromenu.h"
+
+1369003198 c:\users\clarke\documents\codeblocks\oomapgame\include\intromenu.h
+	"windows.h"
+	"world.h"
+
+1368988887 source:c:\users\clarke\documents\codeblocks\oomapgame\resources.rc
+

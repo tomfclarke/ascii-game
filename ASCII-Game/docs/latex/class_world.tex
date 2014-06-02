@@ -1,0 +1,561 @@
+\hypertarget{class_world}{\section{World Class Reference}
+\label{class_world}\index{World@{World}}
+}
+
+
+{\ttfamily \#include $<$world.\-h$>$}
+
+Inheritance diagram for World\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_world}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_world_afa39d4e6f714a7a3691ac0c656f5e8a8}{World} ()
+\item 
+void \hyperlink{class_world_ad76a5c30fcb5d5bbdf0fa7d841b7fb28}{move\-Player} (char direction, \hyperlink{class_player}{Player} $\ast$p)
+\item 
+void \hyperlink{class_world_a5fc3eeeccb6be52aed487e60fd482bd4}{fire\-Bullet} (\hyperlink{class_player}{Player} $\ast$p)
+\item 
+bool \hyperlink{class_world_a4c1cbe120ce27ad9e07699805d2d1c2a}{update\-Bullet} ()
+\item 
+void \hyperlink{class_world_a272362ddd8e710fc99837a5bb7e75c92}{spawn\-Enemy} ()
+\item 
+bool \hyperlink{class_world_a2fc9351f4b946d4298c6e0dd8337202f}{update\-Enemy} ()
+\item 
+unsigned int \hyperlink{class_world_acb0800fa65e5a982f79be1caaff4c959}{get\-Enemy\-List\-Size} ()
+\item 
+unsigned int \hyperlink{class_world_a413a2e1f7353dadff0cec27e92c6a9fe}{get\-Spawn\-Rate} ()
+\item 
+bool \hyperlink{class_world_a086144235159c3747b099d57d2eff24a}{get\-Refresh} ()
+\item 
+void \hyperlink{class_world_a4c6b92ca6d00f977710c458ece504aef}{update\-Score} (int add\-To\-Score)
+\item 
+void \hyperlink{class_world_a9e7ce8f6ae1fff3640cc99cf2f19d54a}{check\-Score} ()
+\item 
+void \hyperlink{class_world_a6438283b3088d3afe058df7566e7b8e8}{update\-High\-Scores} (\hyperlink{class_player}{Player} $\ast$p)
+\item 
+void \hyperlink{class_world_af29bd7e1630114caf6f99b2bcd37a647}{show\-High\-Scores} ()
+\item 
+void \hyperlink{class_world_af75a7049215d511aa08cd568983099e0}{show\-Player\-Lives} (\hyperlink{class_player}{Player} $\ast$p)
+\item 
+bool \hyperlink{class_world_a1a93b6985e00fc5eb7c417f703332532}{check\-Player\-Lives} (\hyperlink{class_player}{Player} $\ast$p)
+\item 
+void \hyperlink{class_world_a5ca54d764c1e0305b3110ebffd19fc4d}{check\-Collisions} (\hyperlink{class_player}{Player} $\ast$p)
+\begin{DoxyCompactList}\small\item\em -\/--------------------- This is where collision check starts \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a4d9747af05b0038a606b30f8e9f66aa3}{update\-Map} (\hyperlink{class_player}{Player} $\ast$p)
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--------------------- End of collision checks \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a0656cc8aa64881db8880d6a1af0d5aea}{update\-Display} ()
+\item 
+bool \hyperlink{class_world_ae5a99f16d3f56792c4c3244b3486db01}{play\-Again} ()
+\item 
+void \hyperlink{class_world_a642a2e3a23d348ec0166a9ed2fe83272}{play\-Music} (int tune\-I\-D)
+\item 
+\hyperlink{class_world_a8c73fba541a5817fff65147ba47cd827}{$\sim$\-World} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_world_abb5635893b4f4c892c4fc034a9950adc}{map} \mbox{[}20\mbox{]}\mbox{[}60\mbox{]}
+\item 
+\hyperlink{class_sound_f_x_manager}{Sound\-F\-X\-Manager} \hyperlink{class_world_a9985bb370d08feeff87c1d200afe26bc}{sound\-Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file world.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_world_afa39d4e6f714a7a3691ac0c656f5e8a8}{\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\subsubsection[{World}]{\setlength{\rightskip}{0pt plus 5cm}World\-::\-World (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_afa39d4e6f714a7a3691ac0c656f5e8a8}
+Load highscores from file
+
+If not loaded, file does not exist so save scores...
+
+If unable to save, there is a problem with the file 
+
+Definition at line 5 of file world.\-cpp.
+
+\hypertarget{class_world_a8c73fba541a5817fff65147ba47cd827}{\index{World@{World}!$\sim$\-World@{$\sim$\-World}}
+\index{$\sim$\-World@{$\sim$\-World}!World@{World}}
+\subsubsection[{$\sim$\-World}]{\setlength{\rightskip}{0pt plus 5cm}World\-::$\sim$\-World (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_a8c73fba541a5817fff65147ba47cd827}
+
+
+Definition at line 605 of file world.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_world_a5ca54d764c1e0305b3110ebffd19fc4d}{\index{World@{World}!check\-Collisions@{check\-Collisions}}
+\index{check\-Collisions@{check\-Collisions}!World@{World}}
+\subsubsection[{check\-Collisions}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::check\-Collisions (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_world_a5ca54d764c1e0305b3110ebffd19fc4d}
+
+
+-\/--------------------- This is where collision check starts 
+
+Temporary locations
+
+Check player location against walls
+
+If player = wall...
+
+Set players location to previous loc
+
+Run through enemy list
+
+Store enemy location in temp loc
+
+Check enemy locations against player
+
+If enemy loc = player loc...
+
+Reset player loc
+
+Decrease lives by 1
+
+Play 'lifelost' sound
+
+Check enemy locations against walls
+
+If enemy = wall...
+
+Store the previous location
+
+Clear the previous location
+
+Delete enemy
+
+Erase entry from the vector list
+
+Update score
+
+Run through bullet list
+
+Store bullet location in temp loc
+
+Check player location against bullets
+
+If player = bullet...
+
+Store the previous location
+
+Clear the previous location
+
+Delete bullet
+
+Remove entry from vector list
+
+Run through enemy list again for each bullet
+
+... (very inefficient)
+
+Store enemy location in temp loc
+
+Check bullet locations against enemies
+
+If bullet = enemy...
+
+Store the previous location
+
+Clear the previous location
+
+Delete enemy
+
+Remove entry from vector list
+
+Update score
+
+Store the previous location
+
+Clear the previous location
+
+Delete bullet
+
+Remove entry from vector list
+
+Play sound
+
+Check bullet locations against walls
+
+If bullet = wall...
+
+Store the previous location
+
+Clear the previous location
+
+Delete bullet
+
+Remove entry from vector list 
+
+Definition at line 100 of file world.\-cpp.
+
+\hypertarget{class_world_a1a93b6985e00fc5eb7c417f703332532}{\index{World@{World}!check\-Player\-Lives@{check\-Player\-Lives}}
+\index{check\-Player\-Lives@{check\-Player\-Lives}!World@{World}}
+\subsubsection[{check\-Player\-Lives}]{\setlength{\rightskip}{0pt plus 5cm}bool World\-::check\-Player\-Lives (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_world_a1a93b6985e00fc5eb7c417f703332532}
+Get lives
+
+If no lives are left
+
+Stop music
+
+Play 'end game' sound
+
+Otherwise... 
+
+Definition at line 394 of file world.\-cpp.
+
+\hypertarget{class_world_a9e7ce8f6ae1fff3640cc99cf2f19d54a}{\index{World@{World}!check\-Score@{check\-Score}}
+\index{check\-Score@{check\-Score}!World@{World}}
+\subsubsection[{check\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::check\-Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_a9e7ce8f6ae1fff3640cc99cf2f19d54a}
+
+
+Definition at line 316 of file world.\-cpp.
+
+\hypertarget{class_world_a5fc3eeeccb6be52aed487e60fd482bd4}{\index{World@{World}!fire\-Bullet@{fire\-Bullet}}
+\index{fire\-Bullet@{fire\-Bullet}!World@{World}}
+\subsubsection[{fire\-Bullet}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::fire\-Bullet (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_world_a5fc3eeeccb6be52aed487e60fd482bd4}
+Instantiate the bullet
+
+Temp location
+
+Store player location
+
+Advance the x position
+
+Set the bullet location
+
+Draw the bullet on the map
+
+Store the bullet in the bullet list
+
+Play 'bullet fired' sound 
+
+Definition at line 3 of file world\-\_\-bullet.\-cpp.
+
+\hypertarget{class_world_acb0800fa65e5a982f79be1caaff4c959}{\index{World@{World}!get\-Enemy\-List\-Size@{get\-Enemy\-List\-Size}}
+\index{get\-Enemy\-List\-Size@{get\-Enemy\-List\-Size}!World@{World}}
+\subsubsection[{get\-Enemy\-List\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int World\-::get\-Enemy\-List\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_world_acb0800fa65e5a982f79be1caaff4c959}
+
+
+Definition at line 54 of file world.\-h.
+
+\hypertarget{class_world_a086144235159c3747b099d57d2eff24a}{\index{World@{World}!get\-Refresh@{get\-Refresh}}
+\index{get\-Refresh@{get\-Refresh}!World@{World}}
+\subsubsection[{get\-Refresh}]{\setlength{\rightskip}{0pt plus 5cm}bool World\-::get\-Refresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_world_a086144235159c3747b099d57d2eff24a}
+
+
+Definition at line 58 of file world.\-h.
+
+\hypertarget{class_world_a413a2e1f7353dadff0cec27e92c6a9fe}{\index{World@{World}!get\-Spawn\-Rate@{get\-Spawn\-Rate}}
+\index{get\-Spawn\-Rate@{get\-Spawn\-Rate}!World@{World}}
+\subsubsection[{get\-Spawn\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int World\-::get\-Spawn\-Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_world_a413a2e1f7353dadff0cec27e92c6a9fe}
+
+
+Definition at line 56 of file world.\-h.
+
+\hypertarget{class_world_ad76a5c30fcb5d5bbdf0fa7d841b7fb28}{\index{World@{World}!move\-Player@{move\-Player}}
+\index{move\-Player@{move\-Player}!World@{World}}
+\subsubsection[{move\-Player}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::move\-Player (
+\begin{DoxyParamCaption}
+\item[{char}]{direction, }
+\item[{{\bf Player} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_world_ad76a5c30fcb5d5bbdf0fa7d841b7fb28}
+Temp location
+
+Get the current location
+
+Determine direction of travel and adjust the new postion accordingly
+
+Update the position of player 
+
+Definition at line 70 of file world.\-cpp.
+
+\hypertarget{class_world_ae5a99f16d3f56792c4c3244b3486db01}{\index{World@{World}!play\-Again@{play\-Again}}
+\index{play\-Again@{play\-Again}!World@{World}}
+\subsubsection[{play\-Again}]{\setlength{\rightskip}{0pt plus 5cm}bool World\-::play\-Again (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_ae5a99f16d3f56792c4c3244b3486db01}
+Message \char`\"{}window\char`\"{} in char array
+
+Run through array
+
+Loop stops before end line char to preserve map edges. 
+
+Definition at line 558 of file world.\-cpp.
+
+\hypertarget{class_world_a642a2e3a23d348ec0166a9ed2fe83272}{\index{World@{World}!play\-Music@{play\-Music}}
+\index{play\-Music@{play\-Music}!World@{World}}
+\subsubsection[{play\-Music}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::play\-Music (
+\begin{DoxyParamCaption}
+\item[{int}]{tune\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_world_a642a2e3a23d348ec0166a9ed2fe83272}
+
+
+Definition at line 78 of file world.\-h.
+
+\hypertarget{class_world_af29bd7e1630114caf6f99b2bcd37a647}{\index{World@{World}!show\-High\-Scores@{show\-High\-Scores}}
+\index{show\-High\-Scores@{show\-High\-Scores}!World@{World}}
+\subsubsection[{show\-High\-Scores}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::show\-High\-Scores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_af29bd7e1630114caf6f99b2bcd37a647}
+Temporary high score table
+
+Fills table with high scores from score\-System
+
+Fills map with whole high score table
+
+Clear the highscores from the map 
+
+Definition at line 489 of file world.\-cpp.
+
+\hypertarget{class_world_af75a7049215d511aa08cd568983099e0}{\index{World@{World}!show\-Player\-Lives@{show\-Player\-Lives}}
+\index{show\-Player\-Lives@{show\-Player\-Lives}!World@{World}}
+\subsubsection[{show\-Player\-Lives}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::show\-Player\-Lives (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_world_af75a7049215d511aa08cd568983099e0}
+Get the lives
+
+Clear previous lives on map
+
+Print lives on map 
+
+Definition at line 375 of file world.\-cpp.
+
+\hypertarget{class_world_a272362ddd8e710fc99837a5bb7e75c92}{\index{World@{World}!spawn\-Enemy@{spawn\-Enemy}}
+\index{spawn\-Enemy@{spawn\-Enemy}!World@{World}}
+\subsubsection[{spawn\-Enemy}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::spawn\-Enemy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_a272362ddd8e710fc99837a5bb7e75c92}
+Instantiate the enemy
+
+Temp location
+
+Set the x coordinate to beside the right wall
+
+Set the y coordinate to a random number between the top and bottom walls.
+
+Extra range check to cut out bad access errors
+
+While random number is N\-O\-T in range
+
+Request another random number
+
+Set the number to the y coordinate
+
+Set the enemy location
+
+Draw the enemy on the map
+
+Store the enemy in the enemy list 
+
+Definition at line 3 of file world\-\_\-enemy.\-cpp.
+
+\hypertarget{class_world_a4c1cbe120ce27ad9e07699805d2d1c2a}{\index{World@{World}!update\-Bullet@{update\-Bullet}}
+\index{update\-Bullet@{update\-Bullet}!World@{World}}
+\subsubsection[{update\-Bullet}]{\setlength{\rightskip}{0pt plus 5cm}bool World\-::update\-Bullet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_a4c1cbe120ce27ad9e07699805d2d1c2a}
+Run through the vector of bullets
+
+Temp location
+
+Get the current location
+
+Advance the proposed location
+
+Set the location
+
+If the vector is not empty return true 
+
+Definition at line 33 of file world\-\_\-bullet.\-cpp.
+
+\hypertarget{class_world_a0656cc8aa64881db8880d6a1af0d5aea}{\index{World@{World}!update\-Display@{update\-Display}}
+\index{update\-Display@{update\-Display}!World@{World}}
+\subsubsection[{update\-Display}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::update\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_a0656cc8aa64881db8880d6a1af0d5aea}
+
+
+Definition at line 275 of file world.\-cpp.
+
+\hypertarget{class_world_a2fc9351f4b946d4298c6e0dd8337202f}{\index{World@{World}!update\-Enemy@{update\-Enemy}}
+\index{update\-Enemy@{update\-Enemy}!World@{World}}
+\subsubsection[{update\-Enemy}]{\setlength{\rightskip}{0pt plus 5cm}bool World\-::update\-Enemy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_world_a2fc9351f4b946d4298c6e0dd8337202f}
+Run through vector of enemies
+
+Temp location
+
+Get the current location
+
+Advance the proposed location
+
+Set the location
+
+If vector is not empty return true 
+
+Definition at line 46 of file world\-\_\-enemy.\-cpp.
+
+\hypertarget{class_world_a6438283b3088d3afe058df7566e7b8e8}{\index{World@{World}!update\-High\-Scores@{update\-High\-Scores}}
+\index{update\-High\-Scores@{update\-High\-Scores}!World@{World}}
+\subsubsection[{update\-High\-Scores}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::update\-High\-Scores (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_world_a6438283b3088d3afe058df7566e7b8e8}
+Temp initials and score
+
+Store the players current score
+
+Store rank 10's score
+
+Check if the high score has been beaten
+
+Not beaten, exit function
+
+Message \char`\"{}window\char`\"{} in char array
+
+Run through array
+
+Loop stops before end line char to preserve map edges.
+
+Put the score in the high scores
+
+Save highscores 
+
+Definition at line 415 of file world.\-cpp.
+
+\hypertarget{class_world_a4d9747af05b0038a606b30f8e9f66aa3}{\index{World@{World}!update\-Map@{update\-Map}}
+\index{update\-Map@{update\-Map}!World@{World}}
+\subsubsection[{update\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::update\-Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_world_a4d9747af05b0038a606b30f8e9f66aa3}
+
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--------------------- End of collision checks 
+
+Store players locations
+
+Draw player on map and clear previous location
+
+Store bullet location
+
+Draw bullet on map and clear previous location
+
+Store enemy location
+
+Draw enemy on map and clear previous location 
+
+Definition at line 245 of file world.\-cpp.
+
+\hypertarget{class_world_a4c6b92ca6d00f977710c458ece504aef}{\index{World@{World}!update\-Score@{update\-Score}}
+\index{update\-Score@{update\-Score}!World@{World}}
+\subsubsection[{update\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void World\-::update\-Score (
+\begin{DoxyParamCaption}
+\item[{int}]{add\-To\-Score}
+\end{DoxyParamCaption}
+)}}\label{class_world_a4c6b92ca6d00f977710c458ece504aef}
+Temp score
+
+Get the current score
+
+Add the points to the score
+
+Set the new score
+
+Temp char array to hold text score
+
+Print score from scoring system into array
+
+Update score on map 
+
+Definition at line 289 of file world.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_world_abb5635893b4f4c892c4fc034a9950adc}{\index{World@{World}!map@{map}}
+\index{map@{map}!World@{World}}
+\subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}char World\-::map\mbox{[}20\mbox{]}\mbox{[}60\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_world_abb5635893b4f4c892c4fc034a9950adc}
+
+
+Definition at line 39 of file world.\-h.
+
+\hypertarget{class_world_a9985bb370d08feeff87c1d200afe26bc}{\index{World@{World}!sound\-Manager@{sound\-Manager}}
+\index{sound\-Manager@{sound\-Manager}!World@{World}}
+\subsubsection[{sound\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\-F\-X\-Manager} World\-::sound\-Manager\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_world_a9985bb370d08feeff87c1d200afe26bc}
+
+
+Definition at line 41 of file world.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Clarke/\-Documents/\-Codeblocks/\-O\-Omap\-Game/include/\hyperlink{world_8h}{world.\-h}\item 
+C\-:/\-Users/\-Clarke/\-Documents/\-Codeblocks/\-O\-Omap\-Game/src/\hyperlink{world_8cpp}{world.\-cpp}\item 
+C\-:/\-Users/\-Clarke/\-Documents/\-Codeblocks/\-O\-Omap\-Game/\hyperlink{world__bullet_8cpp}{world\-\_\-bullet.\-cpp}\item 
+C\-:/\-Users/\-Clarke/\-Documents/\-Codeblocks/\-O\-Omap\-Game/\hyperlink{world__enemy_8cpp}{world\-\_\-enemy.\-cpp}\end{DoxyCompactItemize}

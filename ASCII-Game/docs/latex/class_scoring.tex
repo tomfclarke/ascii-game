@@ -1,0 +1,171 @@
+\hypertarget{class_scoring}{\section{Scoring Class Reference}
+\label{class_scoring}\index{Scoring@{Scoring}}
+}
+
+
+{\ttfamily \#include $<$scoring.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scoring_a0330d479a5440bba361d9ecbf7484251}{Scoring} ()
+\item 
+bool \hyperlink{class_scoring_ae83c84109d3e3192f4efa26650401a4c}{set\-H\-Score} (char first\-I, char second\-I, char third\-I, int new\-Score)
+\item 
+\hyperlink{struct_score}{Score} \hyperlink{class_scoring_a3170997d01a04997aff0bbd1fc483605}{get\-H\-Score} (int rank\-Num)
+\item 
+void \hyperlink{class_scoring_ada835aaabca7a4586c4ba3c656a4c933}{set\-Current\-Score} (int new\-Score)
+\item 
+int \hyperlink{class_scoring_a21558369a11c5d36bae106a4b874d698}{get\-Current\-Score} ()
+\item 
+bool \hyperlink{class_scoring_ab62f2407a147b51cf5d3bea95cd89d84}{save\-High\-Scores} ()
+\item 
+bool \hyperlink{class_scoring_aad00809b1f21d310ebbdb8a9791495f8}{load\-High\-Scores} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The scoring class 
+
+Definition at line 12 of file scoring.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_scoring_a0330d479a5440bba361d9ecbf7484251}{\index{Scoring@{Scoring}!Scoring@{Scoring}}
+\index{Scoring@{Scoring}!Scoring@{Scoring}}
+\subsubsection[{Scoring}]{\setlength{\rightskip}{0pt plus 5cm}Scoring\-::\-Scoring (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scoring_a0330d479a5440bba361d9ecbf7484251}
+Run through high score array and set defaults
+
+Set the rank of each the entry
+
+Set all the initials to '-\/'
+
+Set the score to 0000 
+
+Definition at line 3 of file scoring.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_scoring_a21558369a11c5d36bae106a4b874d698}{\index{Scoring@{Scoring}!get\-Current\-Score@{get\-Current\-Score}}
+\index{get\-Current\-Score@{get\-Current\-Score}!Scoring@{Scoring}}
+\subsubsection[{get\-Current\-Score}]{\setlength{\rightskip}{0pt plus 5cm}int Scoring\-::get\-Current\-Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_scoring_a21558369a11c5d36bae106a4b874d698}
+
+
+Definition at line 32 of file scoring.\-h.
+
+\hypertarget{class_scoring_a3170997d01a04997aff0bbd1fc483605}{\index{Scoring@{Scoring}!get\-H\-Score@{get\-H\-Score}}
+\index{get\-H\-Score@{get\-H\-Score}!Scoring@{Scoring}}
+\subsubsection[{get\-H\-Score}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Score} Scoring\-::get\-H\-Score (
+\begin{DoxyParamCaption}
+\item[{int}]{rank\-Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_scoring_a3170997d01a04997aff0bbd1fc483605}
+
+
+Definition at line 29 of file scoring.\-h.
+
+\hypertarget{class_scoring_aad00809b1f21d310ebbdb8a9791495f8}{\index{Scoring@{Scoring}!load\-High\-Scores@{load\-High\-Scores}}
+\index{load\-High\-Scores@{load\-High\-Scores}!Scoring@{Scoring}}
+\subsubsection[{load\-High\-Scores}]{\setlength{\rightskip}{0pt plus 5cm}bool Scoring\-::load\-High\-Scores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scoring_aad00809b1f21d310ebbdb8a9791495f8}
+Open the highscores file
+
+Temp initials and score
+
+Check if the file has opened
+
+Run through high score array
+
+Read from file into temp char array
+
+Read from file into temp score
+
+Copy the temp values into highscore entry
+
+Close the file
+
+Indicate a failed attempt 
+
+Definition at line 106 of file scoring.\-cpp.
+
+\hypertarget{class_scoring_ab62f2407a147b51cf5d3bea95cd89d84}{\index{Scoring@{Scoring}!save\-High\-Scores@{save\-High\-Scores}}
+\index{save\-High\-Scores@{save\-High\-Scores}!Scoring@{Scoring}}
+\subsubsection[{save\-High\-Scores}]{\setlength{\rightskip}{0pt plus 5cm}bool Scoring\-::save\-High\-Scores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scoring_ab62f2407a147b51cf5d3bea95cd89d84}
+Open the highscores file.
+
+If non existant, a new file will be created
+
+Check if the file is open
+
+Run through the high score list
+
+Write from highscore entry into file
+
+Separate intials and score by a space
+
+End the line
+
+Close file
+
+Indicate a failed attempt 
+
+Definition at line 71 of file scoring.\-cpp.
+
+\hypertarget{class_scoring_ada835aaabca7a4586c4ba3c656a4c933}{\index{Scoring@{Scoring}!set\-Current\-Score@{set\-Current\-Score}}
+\index{set\-Current\-Score@{set\-Current\-Score}!Scoring@{Scoring}}
+\subsubsection[{set\-Current\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Scoring\-::set\-Current\-Score (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-Score}
+\end{DoxyParamCaption}
+)}}\label{class_scoring_ada835aaabca7a4586c4ba3c656a4c933}
+
+
+Definition at line 61 of file scoring.\-cpp.
+
+\hypertarget{class_scoring_ae83c84109d3e3192f4efa26650401a4c}{\index{Scoring@{Scoring}!set\-H\-Score@{set\-H\-Score}}
+\index{set\-H\-Score@{set\-H\-Score}!Scoring@{Scoring}}
+\subsubsection[{set\-H\-Score}]{\setlength{\rightskip}{0pt plus 5cm}bool Scoring\-::set\-H\-Score (
+\begin{DoxyParamCaption}
+\item[{char}]{first\-I, }
+\item[{char}]{second\-I, }
+\item[{char}]{third\-I, }
+\item[{int}]{new\-Score}
+\end{DoxyParamCaption}
+)}}\label{class_scoring_ae83c84109d3e3192f4efa26650401a4c}
+Compare score to other scores in high score list
+
+Set the new rank position
+
+Move all scores down below new rank
+
+Fill in new rank details
+
+Return true to indicate scores have been updated
+
+If nothing has been updated... 
+
+Definition at line 25 of file scoring.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Clarke/\-Documents/\-Codeblocks/\-O\-Omap\-Game/include/\hyperlink{scoring_8h}{scoring.\-h}\item 
+C\-:/\-Users/\-Clarke/\-Documents/\-Codeblocks/\-O\-Omap\-Game/src/\hyperlink{scoring_8cpp}{scoring.\-cpp}\end{DoxyCompactItemize}
