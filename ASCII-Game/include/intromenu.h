@@ -1,8 +1,6 @@
 #ifndef INTROMENU_H
 #define INTROMENU_H
 
-#include "windows.h"
-
 #include "world.h"
 
 class IntroMenu : public World

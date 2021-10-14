@@ -1,4 +1,4 @@
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/player.h"
+#include "../include/player.h"
 
 Player::Player()
 {

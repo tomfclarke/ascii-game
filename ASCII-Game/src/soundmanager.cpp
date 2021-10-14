@@ -1,4 +1,4 @@
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/soundmanager.h"
+#include "../include/soundmanager.h"
 
 SoundFXManager::SoundFXManager()
 {

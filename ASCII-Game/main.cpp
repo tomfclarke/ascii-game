@@ -1,9 +1,7 @@
 #include <iostream>
-#include "windows.h"
 
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/world.h"
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/intromenu.h"
-#include "resources.h"
+#include "include/world.h"
+#include "include/intromenu.h"
 
 using namespace std;
 

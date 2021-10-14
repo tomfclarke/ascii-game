@@ -1,4 +1,4 @@
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/scoring.h"
+#include "../include/scoring.h"
 
 Scoring::Scoring()
 {
@@ -72,7 +72,7 @@ bool Scoring::saveHighScores()
 {
     /// Open the highscores file.
         /// If non existant, a new file will be created
-    hSFileOut.open("C:/Users/Clarke/Documents/Codeblocks/OOmapGame/highscores.txt");
+    hSFileOut.open("../highscores.txt");
 
     /// Check if the file is open
     if(hSFileOut.is_open())
@@ -106,7 +106,7 @@ bool Scoring::saveHighScores()
 bool Scoring::loadHighScores()
 {
     /// Open the highscores file
-    hSFileIn.open("C:/Users/Clarke/Documents/Codeblocks/OOmapGame/highscores.txt");
+    hSFileIn.open("../highscores.txt");
 
     /// Temp initials and score
     char hsInit[3];

@@ -1,7 +1,6 @@
 #ifndef RESOURCES_H_INCLUDED
 #define RESOURCES_H_INCLUDED
 
-#include "windows.h"
 #include "stdlib.h"
 #include "time.h"
 

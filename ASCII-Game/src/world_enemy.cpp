@@ -1,4 +1,4 @@
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/world.h"
+#include "../include/world.h"
 
 void World::spawnEnemy()
 {

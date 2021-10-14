@@ -1,7 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/resources.h"
+#include "resources.h"
 
 class Player
 {

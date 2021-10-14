@@ -1,4 +1,4 @@
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/intromenu.h"
+#include "../include/intromenu.h"
 
 IntroMenu::IntroMenu()
 {

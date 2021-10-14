@@ -1,4 +1,4 @@
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/enemy.h"
+#include "../include/enemy.h"
 
 Enemy::Enemy()
 {
@@ -7,5 +7,5 @@ Enemy::Enemy()
 
     prevLoc = loc;
 
-    appearance = '§';
+    appearance = 'ï¿½';
 }

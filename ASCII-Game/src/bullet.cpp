@@ -1,4 +1,4 @@
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/include/bullet.h"
+#include "../include/bullet.h"
 
 Bullet::Bullet()
 {

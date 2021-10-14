@@ -7,10 +7,8 @@
 #include <vector>
 #include <sstream>
 #include "stdio.h"
-#include "windows.h"
 #include "time.h"
 
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/resources.h"
 #include "player.h"
 #include "bullet.h"
 #include "enemy.h"

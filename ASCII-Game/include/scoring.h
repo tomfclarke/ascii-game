@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "C:/Users/Clarke/Documents/Codeblocks/OOmapGame/resources.h"
+#include "resources.h"
 
 ///
 /// The scoring class
